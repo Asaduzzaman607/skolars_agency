@@ -1,0 +1,681 @@
+/*....General....*/
+.btn-login {
+  color: #fff;
+  background-color: #00ccff;
+  letter-spacing: 0.05rem;
+  padding: 0.4rem 2.25rem;
+  font-size: 0.95rem;
+  font-weight: 500;
+  text-transform: capitalize;
+  box-shadow: 0 2px 5px 0 rgb(0 0 0 / 0.9%), 0 2px 8px 0 rgb(0 0 0 / 10%);
+}
+
+.btn-login:hover {
+  box-shadow: 0 2px 5px 0 rgb(0 0 0 / 12%), 0 2px 10px 0 rgb(0 0 0 / 10%);
+}
+
+.btn-other {
+  background-color: #004cff;
+}
+
+.btn-general {
+  background-color: #00ccff;
+}
+
+/*....Navigation....*/
+header {
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: position 10s;
+  -ms-transition: position 10s;
+  -o-transition: position 10s;
+  transition: all 0.5s ease;
+}
+
+.sticky-top {
+  animation: smoothScroll 1s forwards;
+  background-color: white;
+  box-shadow: 0 2px 5px 0 rgb(0 0 0 / 16%), 0 2px 10px 0 rgb(0 0 0 / 12%);
+}
+
+@keyframes smoothScroll {
+  0% {
+    transform: translateY(-250px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+nav.navbar {
+  background-color: transparent;
+  box-shadow: none;
+}
+
+.navbar-nav .nav-link {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  color: rgba(0, 0, 0, 0.45);
+}
+.nav-link:hover,
+.actively {
+  font-family: "Poppins", sans-serif;
+  color: #00ccff !important;
+  position: relative;
+}
+
+.actively:after {
+  content: "";
+  display: block;
+  width: 60%;
+  height: 3px;
+  background: #00ccff;
+  left: 20%;
+  top: 90%;
+  position: absolute;
+}
+
+.group {
+  display: inline-block;
+  cursor: pointer;
+}
+
+.bar1,
+.bar2,
+.bar3 {
+  width: 25px;
+  height: 3px;
+  background-color: #011a53;
+  margin: 4px 0;
+  transition: 0.4s;
+}
+
+.change .bar1 {
+  -webkit-transform: rotate(-45deg) translate(-2px, 1px);
+  transform: rotate(-45deg) translate(-2px, 1px);
+}
+
+.change .bar2 {
+  opacity: 0;
+}
+
+.change .bar3 {
+  -webkit-transform: rotate(45deg) translate(-8px, -8px);
+  transform: rotate(45deg) translate(-8px, -8px);
+}
+/*....Navigation....*/
+
+.section-head,
+.section-head2,
+.section-head3 {
+  font-family: "Poppins", sans-serif;
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #fff;
+  text-transform: capitalize;
+  margin-bottom: 1.2rem;
+}
+
+.section-head2 {
+  color: #004cff;
+}
+
+.section-head3 {
+  color: #00ffb3;
+}
+
+.material-icons.md-60 {
+  font-size: 60px;
+  color: #00ffb3;
+}
+
+.material-icons.md-75 {
+  font-size: 75px;
+  color: #fff;
+}
+
+/* ...Carousel... */
+
+/* ...Carousel... */
+
+/* Home Page */
+/* ....Sections.... */
+.home-section,
+.home-section-about {
+  padding: 5rem 0 0 0;
+}
+
+.first-caption {
+  font-family: "Poppins", sans-serif;
+  font-size: 1.5rem;
+  font-weight: 500;
+  color: #a5a5a5;
+  text-transform: capitalize;
+  margin-bottom: 6px;
+}
+
+.first-line {
+  margin: 0;
+  width: 75%;
+  border: 1px solid rgb(0 0 0 / 10%);
+}
+
+.bold-caption {
+  font-size: 2.5rem;
+  font-weight: 500;
+  color: #00ccff;
+  text-transform: capitalize;
+  margin: 1rem 0;
+}
+
+.story {
+  font-size: 1.2rem;
+  color: #8b8b8b;
+  line-height: 1.65;
+}
+
+.service-section {
+  padding: 0 0 5rem 0;
+  position: relative;
+}
+
+.move-up {
+  position: absolute;
+  left: 50%;
+  top: 45%;
+  width: 86%;
+  margin-left: -43%;
+}
+
+.break {
+  width: 25%;
+  padding: 0.75rem;
+}
+
+.tile {
+  font-family: "Poppins", sans-serif;
+  font-size: 1.1rem;
+  line-height: 1.4;
+  color: #696969;
+  text-align: center;
+  background-color: #fff;
+  padding: 2.5rem 2rem;
+  border-radius: 5px;
+  box-shadow: 0 2px 8px 4px rgb(0 0 0 / 10%);
+}
+
+.about-section {
+  margin-top: 9rem;
+  position: relative;
+  height: 45vh;
+  width: 100%;
+  background-image: url("../images/parallax\ 2.jpg");
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  overflow: hidden;
+  z-index: 0;
+}
+
+.about-section:after {
+  background: rgb(10, 175, 126);
+  content: "";
+  display: block;
+  height: 100%;
+  opacity: 0.85;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1;
+}
+
+.infograph {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 25%;
+  /* left: 40%; */
+  z-index: 1060;
+  color: #fff;
+}
+
+.number {
+  font-size: 3rem;
+  font-family: "Poppins", sans-serif;
+  margin-bottom: -15px;
+  margin-top: -7px;
+}
+
+.detail {
+  font-size: 1.2rem;
+  text-transform: capitalize;
+  font-weight: 500;
+  letter-spacing: 0.05rem;
+  margin-bottom: 0;
+}
+
+.partner-section {
+  padding: 5rem 0 3.75rem;
+}
+
+/* Footer */
+footer {
+  background-color: #232323;
+  padding-top: 3rem;
+}
+
+.footer-header {
+  font-size: 1.2rem;
+  color: #eee;
+}
+
+.b-link {
+  color: #00ccff;
+  font-size: 0.95rem;
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+}
+
+.b-link:hover {
+  color: rgb(212, 212, 212);
+  opacity: 0.6;
+}
+
+.adf-text {
+  color: rgb(168, 168, 168);
+  position: relative;
+  left: 15px;
+}
+
+.fab {
+  font-size: 1.1rem !important;
+}
+
+.fas {
+  color: #eee;
+}
+
+.icon-link {
+  color: #fff;
+  padding: 0;
+  text-decoration: none;
+  margin-right: 0.75rem;
+}
+
+.icon-link:hover {
+  color: #969696;
+}
+
+.ring {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 2.25rem;
+  width: 2.25rem;
+  background-color: #004cff;
+}
+
+.company-link {
+  color: wheat;
+  position: relative;
+  left: 4px;
+}
+
+.company-link:hover {
+  color: wheat;
+  opacity: 0.6;
+}
+
+.footer-base {
+  background-color: rgba(0, 0, 0, 0.4);
+  padding: 1.5rem;
+}
+.ft-text {
+  font-size: 0.84rem;
+  color: rgb(161, 161, 161);
+}
+
+.ft-text2 {
+  color: rgb(161, 161, 161);
+}
+
+/* ...About Page... */
+.about-gra {
+  width: 85%;
+}
+
+.us {
+  padding: 2.5rem 0 0 0;
+}
+
+.canvas {
+  font-size: 1rem;
+  line-height: 1.4;
+  color: #696969;
+  background-color: #fff;
+  padding: 2rem;
+  border-radius: 5px;
+  box-shadow: 1px 2px 8px 5px #0146300c;
+}
+
+.partner-section-about {
+  padding: 5rem 0 3.75rem 0;
+  margin-top: 2.5rem;
+}
+
+/* ...About Page... */
+
+/* ...Contact Page... */
+.main-contact {
+  padding: 3rem 0 4rem 0;
+  min-height: 50vh;
+}
+
+.cs-head {
+  font-family: "Poppins", sans-serif;
+  font-size: 1.65rem;
+  color: #011a53;
+  font-weight: 600;
+  text-transform: capitalize;
+}
+
+#one,
+#two,
+#three,
+#four {
+  background-color: #f7f7f7;
+  outline: none;
+  border: none;
+}
+
+.banner {
+  display: flex;
+  /* justify-content: center; */
+  align-items: center;
+  width: 90%;
+}
+
+.sphere {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #00ccff;
+  z-index: 1030;
+  box-shadow: 0 2px 5px 0 rgb(0 0 0 / 12%), 0 2px 10px 0 rgb(0 0 0 / 10%);
+}
+
+.peel {
+  width: 90%;
+  padding: 1.25rem;
+  padding-right: 1.95rem;
+  border-radius: 6px;
+  background-color: #f8f8f9;
+  position: relative;
+  left: -20px;
+  overflow-wrap: break-word;
+  box-shadow: 0 2px 5px 2px rgb(0 0 0 / 5%), 0 2px 8px 2px rgb(0 0 0 / 5%);
+}
+/* ...Contact Page... */
+
+/* ...Home2 Page... */
+.about-section2 {
+  padding: 6rem 0 0 0;
+}
+
+.cap-image {
+  width: 75%;
+}
+
+.large-text {
+  font-family: "Poppins", sans-serif;
+  font-size: 2rem;
+  color: #004cff;
+  font-weight: 600;
+  margin-bottom: 0;
+}
+
+.spacer {
+  margin-top: 8.5rem;
+}
+
+.left {
+  position: relative;
+  left: 3rem;
+}
+/* ...Home2 Page... */
+
+/* Media Queries */
+@media (max-width: 1025px) {
+  .move-up {
+    position: absolute;
+    left: 50%;
+    top: 35%;
+    width: 86%;
+    height: fit-content;
+    margin-left: -43%;
+  }
+
+  .break {
+    width: 50%;
+    padding: 0.75rem;
+  }
+
+  .about-section {
+    margin-top: 30vh;
+    height: 25vh;
+  }
+
+  .partner-section {
+    padding: 4rem 0 3rem;
+  }
+
+  .ih {
+    width: 180% !important;
+  }
+
+  .ad-text {
+    font-size: 0.8rem;
+  }
+
+  .fab {
+    font-size: 1.15rem !important;
+  }
+
+  .icon-link {
+    margin-right: 0.85rem;
+  }
+
+  .icon-link:hover {
+    color: white !important;
+  }
+
+  .ring {
+    height: 3rem;
+    width: 3rem;
+  }
+
+  .partner-section-about {
+    margin-top: 23vh;
+  }
+
+  .about-section2 {
+    margin-top: 20vh;
+  }
+}
+
+@media (max-width: 768px) {
+  .actively:after {
+    width: 58px;
+    height: 3px;
+    left: 4px;
+    top: 90%;
+  }
+
+  .about-section {
+    margin-top: 43vh;
+  }
+
+  .material-icons.md-75 {
+    font-size: 60px;
+    color: #fff;
+  }
+
+  .number {
+    font-size: 2.35rem;
+    margin-bottom: -8px;
+  }
+
+  .detail {
+    font-size: 1rem;
+  }
+
+  .home-section-about {
+    padding: 1.5rem 0 0 0;
+  }
+
+  .partner-section-about {
+    margin-top: 33vh;
+  }
+
+  .about-section2 {
+    margin-top: 33vh;
+  }
+
+  .spacer {
+    margin-top: 4.5rem;
+  }
+
+  .left {
+    position: relative;
+    left: 0;
+  }
+}
+
+@media (max-width: 575px) {
+  .home-section {
+    padding: 2rem 0 1rem 0;
+  }
+
+  .first-caption {
+    font-size: 1.2rem;
+  }
+
+  .first-line {
+    width: 85%;
+  }
+
+  .bold-caption {
+    font-size: 2rem;
+    line-height: 1.45;
+  }
+
+  .move-up {
+    top: 28%;
+  }
+
+  .section-head,
+  .section-head2 {
+    font-size: 1.15rem;
+  }
+
+  .break {
+    width: 100%;
+    padding: 0.5rem;
+  }
+
+  .tile {
+    font-size: 1.1rem;
+    padding: 1.5rem 1rem;
+  }
+
+  .about-section {
+    margin-top: 110vh;
+    height: 80vh;
+  }
+
+  .infograph {
+    top: 12%;
+  }
+
+  .number {
+    font-size: 2rem;
+  }
+
+  .detail {
+    font-size: 0.95rem;
+  }
+
+  .partner-section-about {
+    margin-top: 100vh;
+  }
+
+  .banner {
+    width: 100%;
+  }
+
+  .peel {
+    width: 100%;
+  }
+
+  .cap-image {
+    width: 90%;
+  }
+
+  .about-section2 {
+    margin-top: 90vh;
+  }
+
+  .spacer {
+    margin-top: 2rem;
+  }
+
+  .large-text {
+    font-size: 1.3rem;
+    line-height: 1.4;
+  }
+}
+
+@media (max-width: 375px) {
+  .about-section {
+    margin-top: 122vh;
+  }
+
+  .partner-section-about {
+    margin-top: 110vh;
+  }
+
+   .about-section2 {
+    margin-top: 100vh;
+  }
+}
+
+@media (max-width: 350px) {
+  .about-section {
+    margin-top: 140vh;
+    height: 90vh;
+  }
+
+  .partner-section-about {
+    margin-top: 127vh;
+  }
+
+   .about-section2 {
+    margin-top: 118vh;
+  }
+}
+
+@media (min-height: 800px) and (max-width: 415px) {
+  .about-section {
+    margin-top: 100vh;
+    height: 70vh;
+  }
+
+  .partner-section-about {
+    margin-top: 87vh;
+  }
+
+   .about-section2 {
+    margin-top: 80vh;
+  }
+}
